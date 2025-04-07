@@ -19,7 +19,7 @@ module "prd-infra" {
 module "stg-infra" {
   source = "./infra-app"
   env = "stg"
-  bucket_name = "ishant-infra-app-bucket"
+  bucket_name = "dishant-infra-app-bucket"
   instance_count = 1
   instance_type = "t2.micro"
   ami_id = "ami-04f167a56786e4b09"
