@@ -16,7 +16,7 @@ resource "aws_default_vpc" "default_vpc" {
 resource "aws_security_group" "infra_app_security_group" {
     name = "${var.env}-infra-app-security-group"
     description = "This security group created using TF"
-    vpc_id = aws_default_vpc.default_vpc.vpc_id
+    vpc_id = aws_default_vpc.default_vpc.id
     
     ingress {
         to_port = 22
